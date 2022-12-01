@@ -14,6 +14,7 @@ div, img, h1, h2, h3, p {
 }
 
 .link__arrow {
+  color: #2f80ed;
   text-decoration: none;
 }
 
@@ -167,17 +168,48 @@ div, img, h1, h2, h3, p {
 }
 
 .footer__column_content_info {
-  background: darkgreen;
   display: flex;
   flex-direction: column;
 }
 
-.footer__column_content_social {
-  background: darkgoldenrod;
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
 }
+
+.footer__column-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column_content_social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__social-icon {
+ margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+.footer__column-link {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
 .footer__text {
   color: #fff;
 }
+
 
 
 /* и элемента с модификатором вида ключ-значение */
