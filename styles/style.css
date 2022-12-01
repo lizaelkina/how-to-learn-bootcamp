@@ -13,6 +13,14 @@ div, img {
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+.link__arrow {
+  text-decoration: none;
+}
+
+.link__arrow::after {
+  content: '\2192';
+}
+
 .header {
   height: 100vh;
   min-height: 600px;
@@ -56,14 +64,6 @@ div, img {
   z-index: 2;
 }
 
-.header__link {
-  text-decoration: none;
-}
-
-.header__link::after {
-  content: '\2192';
-}
-
 .header__main-illustration {
   position: absolute;
   bottom: 0;
@@ -80,8 +80,67 @@ div, img {
   width: 568px;
   height: 568px;
   background: #2f80ed;
-
 }
+
+.description {
+  position: relative;
+}
+
+.two-columns {
+  position: absolute;
+}
+
+.feynman {
+  height: 890px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background:  #f2f2f2;
+}
+
+.feynman__title {
+  margin-top: 100px;
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  text-align: center;
+  z-index: 1;
+}
+
+.feynman__subtitle {
+  margin-top: 70px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  z-index: 1;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  z-index: 1;
+}
+
+.feynman__main-illustration {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 867px;
+  height: 637px;
+}
+
+
+
+
+
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
