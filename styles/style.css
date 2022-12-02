@@ -1,7 +1,3 @@
-div, img, h1, h2, h3, p {
-  border: 1px solid red;
-}
-
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -19,6 +15,7 @@ div, img, h1, h2, h3, p {
   position: relative;
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 
 .logo {
@@ -30,7 +27,6 @@ div, img, h1, h2, h3, p {
   position: absolute;
   top: 30px;
   left: 64px;
-  z-index: 2;
 }
 
 .header__title {
@@ -39,7 +35,6 @@ div, img, h1, h2, h3, p {
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
-  z-index: 2;
 }
 
 .header__subtitle {
@@ -50,7 +45,6 @@ div, img, h1, h2, h3, p {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  z-index: 2;
 }
 
 .header__link {
@@ -68,7 +62,7 @@ div, img, h1, h2, h3, p {
   right: 0;
   width: 765px;
   height: 608px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .header__square-pic {
@@ -79,6 +73,7 @@ div, img, h1, h2, h3, p {
   width: 568px;
   height: 568px;
   background: #2f80ed;
+  z-index: -2;
 }
 
 /* Секция 1, блок description */
@@ -169,8 +164,8 @@ div, img, h1, h2, h3, p {
 }
 
 .table__cell {
-  width: 250px;
   margin-top: 60px;
+  width: 250px;
 }
 
 .table__heading {
@@ -244,12 +239,51 @@ div, img, h1, h2, h3, p {
 /* Секция 4, блок kaufman */
 
 .kaufman {
+  background: #1f1f1f;
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  z-index: 1;
 }
 
+.section-title_theme_dark {
+  margin: 90px 0 0 0;
+  color: #fff;
+}
+
+.section-subtitle_theme_dark {
+  color: #fff;
+}
+
+.table_theme_dark {
+  margin: 0 auto 90px;
+}
+
+.table__cell_theme_dark {
+  margin-top: 80px;
+  width: 200px;
+  color: #fff;
+}
+
+.table__heading_theme_dark {
+  color: #fff;
+}
+
+.table__text_theme_dark {
+  color: #fff;
+}
+
+.kaufman__triangle {
+  position: absolute;
+  top: 0;
+  right: -210px;
+  width: 877px;
+  height: 877px;
+  z-index: -1;
+}
 
 /* Подвал сайта, блок footer */
 
@@ -323,13 +357,3 @@ div, img, h1, h2, h3, p {
   display: flex;
   align-items: center;
 }
-
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: #fff;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
