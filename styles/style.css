@@ -32,7 +32,7 @@
 .header__title {
   margin: 0 0 0 64px;
   padding: 0;
-  width: 730px;
+  max-width: 730px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
@@ -42,7 +42,7 @@
   margin: 0;
   padding: 0;
   position: absolute;
-  width: 388px;
+  max-width: 388px;
   left: 64px;
   bottom: 30px;
   line-height: 25px;
@@ -98,7 +98,7 @@
 .two-columns__brief {
   margin: 0;
   padding: 0;
-  width: 175px;
+  max-width: 175px;
   color: #2f80ed;
   line-height: 1.2;
   font-size: 18px;
@@ -141,7 +141,7 @@
 
 .section-title {
   margin: 100px 0 0 0;
-  width: 60%;
+  max-width: 60%;
   text-align: center;
   line-height: 1.15;
   font-size: 60px;
@@ -150,7 +150,7 @@
 
 .section-subtitle {
   margin: 20px 0 0 0;
-  width: 60%;
+  max-width: 60%;
   text-align: center;
   line-height: 34px;
   font-size: 24px;
@@ -203,7 +203,7 @@
 
 .feynman__title {
   margin: 100px 0 0 0;
-  width: 648px;
+  max-width: 648px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
@@ -359,4 +359,8 @@
   margin-right: 10px;
   width: 16px;
   height: 16px;
+}
+
+.link-hover:hover {
+  text-decoration: underline;
 }
