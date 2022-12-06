@@ -1,3 +1,10 @@
+.page {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
 @keyframes rotation {
   from {
     transform: rotate(0deg);
@@ -5,17 +12,6 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-p, h1, h2, h3, h4, h5, h6, a, li {
-  border: 1px solid red;
-}
-
-.page {
-  min-width: 1100px;
-  max-width: 1600px;
-  margin: 0 auto;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* Шапка сайта, блок header */
@@ -372,6 +368,20 @@ p, h1, h2, h3, h4, h5, h6, a, li {
 }
 
 /* Секция 9, блок resources */
+
+.resources__logo-zone {
+  margin: 80px auto 217px;
+  max-width: 1110px;
+  display: flex;
+}
+
+.resources__link {
+  width: 270px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Подвал сайта, блок footer */
 
