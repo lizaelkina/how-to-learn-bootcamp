@@ -1,3 +1,12 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 p, h1, h2, h3, h4, h5, h6, a, li {
   border: 1px solid red;
 }
@@ -20,6 +29,7 @@ p, h1, h2, h3, h4, h5, h6, a, li {
   display: flex;
   align-items: center;
   z-index: 1;
+  overflow: hidden;
 }
 
 .logo {
@@ -76,7 +86,7 @@ p, h1, h2, h3, h4, h5, h6, a, li {
 
 .header__square-pic {
   position: absolute;
-  max-height: calc(100% - 64px); /* ограничила максимальную высоту квадрата, чтобы не выходил за высоту блока */
+  max-height: calc(100% - 64px);
   top: 64px;
   right: 0;
   width: 568px;
@@ -142,6 +152,7 @@ p, h1, h2, h3, h4, h5, h6, a, li {
 }
 
 .cards {
+  background: blueviolet;
   min-width: 920px;
   display: flex;
   flex-wrap: wrap;
@@ -150,7 +161,6 @@ p, h1, h2, h3, h4, h5, h6, a, li {
 
 .cards__item {
   background: #2f80ed;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -181,7 +191,71 @@ p, h1, h2, h3, h4, h5, h6, a, li {
   text-align: center;
 }
 
-/* Секция 3, блок digits */
+/*Секция 3, блок video*/
+
+/*Секция 4, блок oakley*/
+
+.oakley {
+  padding-top: 160px;
+}
+
+/* Секция 5, блок feynman */
+
+.feynman {
+  min-height: 890px;
+  background: #f2f2f2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.feynman__title {
+  margin: 100px 0 0 0;
+  padding: 0;
+  max-width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  text-align: center;
+  z-index: 1;
+}
+
+.feynman__subtitle {
+  margin: 70px 0 0 0;
+  padding: 0;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  z-index: 1;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  color: #2f80ed;
+  text-decoration: none;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  z-index: 1;
+}
+
+.feynman__link::after {
+  content: '\2192';
+}
+
+.feynman__main-illustration {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 867px;
+  height: 637px;
+}
+
+/* Секция 6, блок digits */
 
 .digits {
   display: flex;
@@ -244,63 +318,9 @@ p, h1, h2, h3, h4, h5, h6, a, li {
   font-weight: normal;
 }
 
-/* Секция 3, блок feynman */
+/* Секция 7, блок khan */
 
-.feynman {
-  min-height: 890px;
-  background: #f2f2f2;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.feynman__title {
-  margin: 100px 0 0 0;
-  padding: 0;
-  max-width: 648px;
-  line-height: 1.15;
-  font-size: 120px;
-  font-weight: 600;
-  text-align: center;
-  z-index: 1;
-}
-
-.feynman__subtitle {
-  margin: 70px 0 0 0;
-  padding: 0;
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-  z-index: 1;
-}
-
-.feynman__link {
-  position: absolute;
-  top: 50%;
-  right: 48px;
-  color: #2f80ed;
-  text-decoration: none;
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-  z-index: 1;
-}
-
-.feynman__link::after {
-  content: '\2192';
-}
-
-.feynman__main-illustration {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 867px;
-  height: 637px;
-}
-
-/* Секция 4, блок kaufman */
+/* Секция 8, блок kaufman */
 
 .kaufman {
   background: #1f1f1f;
@@ -350,6 +370,8 @@ p, h1, h2, h3, h4, h5, h6, a, li {
   height: 877px;
   z-index: -1;
 }
+
+/* Секция 9, блок resources */
 
 /* Подвал сайта, блок footer */
 
@@ -421,15 +443,23 @@ p, h1, h2, h3, h4, h5, h6, a, li {
   align-items: center;
 }
 
+/* Блоки для микса */
+
 .link__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.link-hover:hover {
-  opacity: .5;
-  transition: opacity .3s;
+.link-hover {
+  transition: opacity .3s ease;
 }
 
+.link-hover:hover {
+  opacity: .5;
+}
+
+.rotation {
+  animation: rotation 20s infinite linear;
+}
 
