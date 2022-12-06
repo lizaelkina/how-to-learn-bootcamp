@@ -189,6 +189,21 @@
 
 /*Секция 3, блок video*/
 
+.video {
+  max-height: 540px;
+}
+
+.video__list {
+  margin: 50px auto 0;
+  display: flex;
+  gap: 20px;
+}
+
+.video__player {
+  width: 513px;
+  height: 316px;
+}
+
 /*Секция 4, блок oakley*/
 
 .oakley {
@@ -475,4 +490,3 @@
 .rotation {
   animation: rotation 20s infinite linear;
 }
-
