@@ -201,6 +201,7 @@
 .video__player {
   width: 513px;
   height: 316px;
+  border: 0;
 }
 
 /*Секция 4, блок oakley*/
