@@ -1,0 +1,7 @@
+.cards__item {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: calc((100% - 200px) / 3)
+}
