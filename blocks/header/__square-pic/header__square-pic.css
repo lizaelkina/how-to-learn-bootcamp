@@ -1,6 +1,5 @@
 .header__square-pic {
   position: absolute;
-  max-height: calc(100% - 64px);
   top: 64px;
   right: 0;
   width: 568px;
