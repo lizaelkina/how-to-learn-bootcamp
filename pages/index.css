@@ -59,6 +59,17 @@
 @import url(../blocks/resources/__links/resources__links.css);
 @import url(../blocks/resources/__logo/resources__logo.css);
 @import url(../blocks/resources/__link/resources__link.css);
+@import url(../blocks/form/form.css);
+@import url(../blocks/form/__triangle/form__triangle.css);
+@import url(../blocks/form/__container/form__container.css);
+@import url(../blocks/form/__label/form__label.css);
+@import url(../blocks/form/__text/form__text.css);
+@import url(../blocks/form/__text/_column/form__text_column_one.css);
+@import url(../blocks/form/__text/_column/form__text_column_two.css);
+@import url(../blocks/form/__info/form__info.css);
+@import url(../blocks/form/__comment/form__comment.css);
+@import url(../blocks/form/__handlers/form__handlers.css);
+@import url(../blocks/form/__button/form__button.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__columns/footer__columns.css);
 @import url(../blocks/footer/__column/footer__column.css);
