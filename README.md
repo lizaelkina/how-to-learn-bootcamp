@@ -14,4 +14,4 @@
 - добавить любимые образовательные видео;
 - задизайнить форму, через которую пользователи смогут отправить комментарий.
 
-## GitHub Pages [Ссылка](https://lizapetkova.github.io/russian-travel-bootcamp/)
+## GitHub Pages [Ссылка](https://lizapetkova.github.io/how-to-learn-bootcamp/)
