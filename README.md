@@ -11,6 +11,6 @@
 - HTML5
 - CCS3
 
-## GitHub Pages
+## Ссылка на проект
 
-- [Ссылка на сайт](https://lizapetkova.github.io/how-to-learn-bootcamp/)
+- http://markup.elkacloud.ru
