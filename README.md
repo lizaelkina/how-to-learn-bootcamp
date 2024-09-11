@@ -13,4 +13,4 @@
 
 ## Ссылка на проект
 
-- http://markup.elkacloud.ru
+- https://lizaelkina.github.io/how-to-learn-bootcamp/
